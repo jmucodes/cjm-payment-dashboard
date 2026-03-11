@@ -28,7 +28,7 @@
   --teal: #00695c;
 }
 * { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--text); line-height:1.5; }
+body { font-family:'DM Sans',sans-serif; font-size:120%; background:var(--bg); color:var(--text); line-height:1.5; }
 .container { max-width:1440px; margin:0 auto; padding:24px; }
 
 .header { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:28px; padding-bottom:20px; border-bottom:2px solid var(--accent); }
@@ -45,9 +45,9 @@ body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--text)
 .card { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:18px; box-shadow:0 1px 3px rgba(0,0,0,0.04); }
 
 .kpi { text-align:center; padding:16px 12px; }
-.kpi .label { font-size:11px; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.6px; margin-bottom:6px; font-weight:500; }
+.kpi .label { font-size:13px; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.6px; margin-bottom:6px; font-weight:500; }
 .kpi .value { font-size:22px; font-weight:700; font-family:'JetBrains Mono',monospace; }
-.kpi .sub { font-size:11px; color:var(--text-muted); margin-top:4px; }
+.kpi .sub { font-size:13px; color:var(--text-muted); margin-top:4px; }
 
 .section-header { font-size:16px; font-weight:700; margin:28px 0 14px; padding-left:12px; border-left:3px solid var(--accent); color:var(--text); }
 
@@ -57,12 +57,12 @@ thead { position:sticky; top:0; z-index:1; }
 th { background:var(--surface2); padding:10px 12px; text-align:left; font-weight:600; color:var(--text-muted); font-size:10.5px; text-transform:uppercase; letter-spacing:0.5px; border-bottom:2px solid var(--border); }
 td { padding:7px 12px; border-bottom:1px solid var(--border); }
 tr:hover { background:#f8f9fb; }
-.mono { font-family:'JetBrains Mono',monospace; font-size:12px; }
+.mono { font-family:'JetBrains Mono',monospace; font-size:14px; }
 .right { text-align:right; }
 .amt-red { color:var(--red); font-weight:500; }
 .amt-green { color:var(--green); font-weight:500; }
 
-.tag { display:inline-block; font-size:10px; padding:2px 7px; border-radius:3px; font-weight:600; }
+.tag { display:inline-block; font-size:14px; padding:2px 7px; border-radius:3px; font-weight:600; }
 .tag-cns { background:#dbeafe; color:#1565c0; }
 .tag-moca { background:#fce8ec; color:#7b1a2c; }
 .tag-uasd { background:#ede9fe; color:#6a1b9a; }
@@ -71,7 +71,7 @@ tr:hover { background:#f8f9fb; }
 .chart-container { position:relative; height:300px; }
 
 .tabs { display:flex; gap:6px; margin-bottom:14px; flex-wrap:wrap; }
-.tab { padding:6px 14px; border-radius:6px; font-size:12px; font-weight:500; cursor:pointer; background:var(--surface2); border:1px solid var(--border); color:var(--text-muted); transition:all 0.15s; }
+.tab { padding:6px 14px; border-radius:6px; font-size:14px; font-weight:500; cursor:pointer; background:var(--surface2); border:1px solid var(--border); color:var(--text-muted); transition:all 0.15s; }
 .tab:hover { border-color:var(--accent); color:var(--accent); }
 .tab.active { background:var(--accent); color:#fff; border-color:var(--accent); }
 
@@ -82,10 +82,10 @@ tr:hover { background:#f8f9fb; }
 
 .bar-list { display:flex; flex-direction:column; gap:7px; }
 .bar-item { display:flex; align-items:center; gap:10px; }
-.bar-label { font-size:12px; width:220px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; flex-shrink:0; }
+.bar-label { font-size:14px; width:220px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; flex-shrink:0; }
 .bar-track { flex:1; height:22px; background:var(--surface2); border-radius:4px; overflow:hidden; }
 .bar-fill { height:100%; border-radius:4px; transition:width 0.4s ease; }
-.bar-value { font-family:'JetBrains Mono',monospace; font-size:11px; width:130px; text-align:right; flex-shrink:0; color:var(--text-muted); }
+.bar-value { font-family:'JetBrains Mono',monospace; font-size:13px; width:130px; text-align:right; flex-shrink:0; color:var(--text-muted); }
 
 .alert { background:var(--accent-light); border:1px solid #f4b8c1; border-radius:10px; padding:16px 20px; margin-bottom:22px; }
 .alert h4 { color:var(--accent); font-size:14px; margin-bottom:6px; }
@@ -93,11 +93,11 @@ tr:hover { background:#f8f9fb; }
 .alert strong { color:var(--text); }
 
 .acct-card { padding:14px; }
-.acct-card .name { font-size:11px; color:var(--text-muted); margin-bottom:4px; font-weight:600; text-transform:uppercase; letter-spacing:0.3px; }
+.acct-card .name { font-size:13px; color:var(--text-muted); margin-bottom:4px; font-weight:600; text-transform:uppercase; letter-spacing:0.3px; }
 .acct-card .balance { font-size:15px; font-weight:700; font-family:'JetBrains Mono',monospace; color:var(--accent2); margin-bottom:6px; }
-.acct-card .stat { font-size:11px; margin:2px 0; }
+.acct-card .stat { font-size:13px; margin:2px 0; }
 
-.note-box { background:#fff7ed; border:1px solid #fed7aa; border-radius:8px; padding:12px 16px; margin-bottom:20px; font-size:12px; color:#92400e; }
+.note-box { background:#fff7ed; border:1px solid #fed7aa; border-radius:8px; padding:12px 16px; margin-bottom:20px; font-size:14px; color:#92400e; }
 .note-box strong { color:#78350f; }
 
 @media(max-width:1024px) {
@@ -325,16 +325,23 @@ new Chart(dailyCtx,{
 const vendorDiv = document.getElementById('vendor-bars');
 const topEntries = Object.entries(DATA.unified_top).sort((a,b)=>b[1].dop_equiv-a[1].dop_equiv).slice(0,20);
 const maxV = topEntries.length?topEntries[0][1].dop_equiv:1;
+let vendorTotal = 0;
 topEntries.forEach(([name,vals],i)=>{
   const pct = (vals.dop_equiv/maxV*100).toFixed(1);
   let label = 'RD$'+FMT.short(vals.dop_equiv);
   if(vals.usd>0) label += ' ($'+FMT.short(vals.usd)+' USD)';
+  vendorTotal += vals.dop_equiv;
   vendorDiv.innerHTML+=`<div class="bar-item">
     <div class="bar-label" title="${name}">${name}</div>
     <div class="bar-track"><div class="bar-fill" style="width:${pct}%;background:${COLORS[i%COLORS.length]}"></div></div>
     <div class="bar-value">${label}</div>
   </div>`;
 });
+vendorDiv.innerHTML+=`<div class="bar-item" style="margin-top:10px;padding-top:10px;border-top:2px solid var(--accent);">
+  <div class="bar-label" style="font-weight:700;color:var(--accent);">TOTAL TOP 20</div>
+  <div class="bar-track"></div>
+  <div class="bar-value" style="font-weight:700;color:var(--accent);font-size:14px;">RD$${FMT.short(vendorTotal)}</div>
+</div>`;
 
 // Category detail tabs
 const tabsDiv = document.getElementById('account-tabs');
@@ -354,16 +361,27 @@ function renderDetail(account) {
   const isUSD = account.includes('USD');
   const div = document.getElementById('category-detail');
   div.innerHTML='';
+  let detailTotal = 0;
+  let detailTotalUSD = 0;
   entries.forEach((e,i)=>{
     const pct=(e.total/maxVal*100).toFixed(1);
     let val = isUSD ? FMT.usd(e.usd||e.total) : FMT.dop(e.dop);
     if(e.usd>0 && !isUSD) val+=' + '+FMT.usd(e.usd);
+    detailTotal += e.dop;
+    detailTotalUSD += e.usd;
     div.innerHTML+=`<div class="bar-item">
       <div class="bar-label" title="${e.name}">${e.name}</div>
       <div class="bar-track"><div class="bar-fill" style="width:${pct}%;background:${COLORS[i%COLORS.length]}"></div></div>
       <div class="bar-value">${val}</div>
     </div>`;
   });
+  let totalLabel = isUSD ? FMT.usd(detailTotalUSD) : FMT.dop(detailTotal);
+  if(detailTotalUSD>0 && !isUSD) totalLabel += ' + ' + FMT.usd(detailTotalUSD);
+  div.innerHTML+=`<div class="bar-item" style="margin-top:10px;padding-top:10px;border-top:2px solid var(--accent);">
+    <div class="bar-label" style="font-weight:700;color:var(--accent);">TOTAL CUENTA</div>
+    <div class="bar-track"></div>
+    <div class="bar-value" style="font-weight:700;color:var(--accent);font-size:14px;">${totalLabel}</div>
+  </div>`;
 }
 
 tabAccs.forEach((a,i)=>{
@@ -410,10 +428,10 @@ function renderTx(){
     const equiv=t.currency==='USD'?'RD$'+(t.debit*FX).toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:0}):'—';
     return `<tr>
       <td class="mono">${t.date}</td>
-      <td style="font-size:11px">${t.account}</td>
+      <td style="font-size:13px">${t.account}</td>
       <td>${projTag(t.project)}</td>
-      <td style="font-size:12px">${t.category}</td>
-      <td style="font-size:11px;max-width:250px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${t.description}">${t.description||'—'}</td>
+      <td style="font-size:14px">${t.category}</td>
+      <td style="font-size:13px;max-width:250px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${t.description}">${t.description||'—'}</td>
       <td class="right mono amt-red">${sym}${t.debit.toLocaleString('en-US',{minimumFractionDigits:2})}</td>
       <td class="right mono" style="color:var(--text-muted)">${equiv}</td>
     </tr>`;
